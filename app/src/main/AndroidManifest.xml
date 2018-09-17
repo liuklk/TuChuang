@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.twentyfourhours.tuchuang">
+    <!--地图1TDHR7z0ap2nGD7V9WfL6ErbfuypkBgA-->
+
+    <!-- Frontia框架的公共权限 -->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <!-- 推荐的权限 -->
+    <!-- 添加如下权限，以便使用更多的第三方SDK(如：高德定位SDK)和更精准的统计数据 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!--微信分享权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <!--地图-->
+    <!--//读取设备硬件信息，统计数据-->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!--//允许sd卡写权限，需写入地图数据，禁用后无法显示地图-->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--//获取统计数据-->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!--//鉴权所需该权限获取进程列表-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION">
+
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION">
+
+    </uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE">
+
+    </uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE">
+
+    </uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE">
+
+    </uses-permission>
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE">
+
+    </uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE">
+
+    </uses-permission>
+    <!-- 访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS">
+
+    </uses-permission>
+    <application
+        android:name=".common.base.Application"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_test"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="7a5d689be1da027ef1fdf6ee" />
+        <activity android:name=".ui.activity.MainActivity"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".ui.activity.LoginActivity">
+
+        </activity>
+        <activity android:name=".ui.activity.SearchActivity"/>
+        <activity
+            android:name=".scan.MipcaActivityCapture"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".ui.activity.ShoppingDetailActivity"/>
+        <activity android:name=".ui.activity.CartActivity"/>
+        <activity android:name=".ui.activity.CustomizedActivity"/>
+        <activity android:name=".ui.activity.DrawActivity"/>
+        <activity android:name=".ui.activity.PreviewShopActivity"/>
+        <activity android:name=".ui.activity.FirmOrderActivity"/>
+        <activity android:name=".ui.activity.CouponActivity"/>
+        <activity android:name=".ui.activity.AddressManagerActivity"/>
+        <activity android:name=".ui.activity.NewAddressActivity"/>
+        <activity android:name=".ui.activity.PayActivity"/>
+        <activity android:name=".ui.activity.MyOderActivity"/>
+        <activity android:name=".ui.activity.EvaluateActivity"/>
+        <activity android:name=".ui.activity.LogisticsActivity"/>
+        <activity android:name=".ui.activity.MessageCenterActivity"/>
+        <activity android:name=".ui.activity.MyDesignActivity"/>
+        <activity android:name=".ui.activity.MyCollectionActivity"/>
+        <activity android:name=".ui.activity.MyCouponActivity"/>
+        <activity android:name=".ui.activity.SearchDetailActivity"/>
+        <activity android:name=".ui.activity.LookMoreActivity"/>
+        <activity android:name=".ui.activity.SettingActivity"/>
+        <activity android:name=".ui.activity.FeedBackActivity"/>
+        <activity android:name=".ui.activity.EvaluateShowActivity"/>
+        <activity android:name=".ui.activity.PhoneNumberActivity"/>
+        <activity android:name=".ui.activity.BindPhoneNumberActivity"/>
+        <activity android:name=".ui.activity.SystemHelpActivity"/>
+        <activity android:name=".image.ImagePagerActivity"/>
+        <activity android:name=".ui.activity.PreviewActivity"/>
+        <activity android:name=".ui.activity.CommunityDetailActivity"/>
+        <activity android:name=".ui.activity.WriteHeartActivity"/>
+        <activity android:name=".ui.activity.WriteHeartTextActivity"/>
+        <activity android:name=".ui.activity.CommentActivity"/>
+        <activity android:name=".ui.activity.FindFriendActivity"/>
+        <activity android:name=".ui.activity.CommunityUserDetailActivity"/>
+        <activity android:name=".ui.activity.SelectVideoActivity"/>
+        <activity android:name=".ui.activity.SelectMusicActivity"/>
+        <activity android:name=".select.list.CityListSelectActivity"/>
+        <activity android:name=".ui.activity.PreviewWriteHeartActivity"/>
+        <activity android:name=".ui.activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 设置 文字图片的文字 -->
+        <activity
+            android:name=".ui.activity.EditTextActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- QQ第三方登录相关       开始 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent101460259" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+        <!-- QQ第三方登录相关       结束 -->
+        <!-- 微信第三方登录相关       开始 -->
+        <activity
+            android:name=".share.com.aohuan.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- 微信第三方登录相关       结束 -->
+        <!--&lt;!&ndash; 新浪微博第三方登录相关       开始 &ndash;&gt;-->
+        <!--<activity-->
+            <!--android:name="com.mob.tools.MobUIShell"-->
+            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar"-->
+            <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:windowSoftInputMode="stateHidden|adjustResize" >-->
+            <!--&lt;!&ndash;-->
+              <!--AuthorizeAdapter表示一个继承自cn.sharesdk.framework.authorize.AuthorizeAdapter-->
+              <!--的类，这个类可以监听到页面的生命周期，也可以获取授权页面的各种UI控件。-->
+              <!--开发者可以通过继承AuthorizeAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。-->
+        <!--&ndash;&gt;-->
+            <!--<meta-data android:name="AuthorizeAdapter" android:value="com.example.MyAdapter" />-->
+        <!--</activity>-->
+        <!--&lt;!&ndash; 新浪微博第三方登录相关       结束 &ndash;&gt;-->
+        <!--微信分享回调 -->
+        <!--<activity
+            android:name=".jinghai_lifee.wxapi.WXEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait" />-->
+        <!-- QQ客户端回调 -->
+        <!-- <activity
+             android:name="cn.sharesdk.tencent.qq.ResultReceiver"
+             android:launchMode="singleTask"
+             android:noHistory="true">
+             &lt;!&ndash;
+             如果集成QQ分享，或者使用QQ客户端来进行QQ空间的分享，须要在此处添加一个对ACTION_VIEW
+             事件的过滤器，其中的scheme是“tencent”前缀再开发者应用的加上appId。如果此过滤器不设置，
+             则分享结束以后不能得到正确的回调
+             &ndash;&gt;
+             <intent-filter android:priority="1000" >
+                 <data android:scheme="tencent100371282" />
+                 <action android:name="android.intent.action.VIEW" />
+                 <category android:name="android.intent.category.DEFAULT" />
+                 <category android:name="android.intent.category.BROWSABLE" />
+             </intent-filter>
+         </activity>-->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencenXXX" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--微信分享回调-->
+        <activity
+            android:name=".share.com.example.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <!--友盟分享appkey-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="59e1c65799f0c7070200000c">
+
+        </meta-data>
+        <activity android:name=".wxapi.WXEntryActivity" />
+        <!--友盟推送appkey-->
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="5cab85ccd3493abd134847e4f7b294e2">
+
+        </meta-data>
+        <!--推广渠道-->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID">
+
+        </meta-data>
+        <!--地图-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="1TDHR7z0ap2nGD7V9WfL6ErbfuypkBgA" />
+
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+        </service><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <!--<meta-data android:name="CHANNEL" android:value="${CHANNEL_VALUE}" />-->
+    </application>
+
+</manifest>

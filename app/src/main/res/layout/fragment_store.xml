@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginTop="24dp"
+        android:background="@color/withe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:background="@drawable/searchbg2"
+            android:layout_centerInParent="true"
+            android:id="@+id/search"
+            android:layout_height="32dp"
+            android:layout_width="345dp">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/icon_search"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/textcolor3"
+                android:text="搜索商品,共10340款好物"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/withe"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                app:tabMode="scrollable"
+                app:tabGravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="@color/black_bg"
+                app:tabIndicatorHeight="1dp"
+                app:tabTextAppearance="@style/TabLayoutTextStyle"
+                app:tabSelectedTextColor="@color/black_bg"
+                app:tabTextColor="@color/normal_bg" />
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/pindao"
+                android:layout_marginLeft="36dp"
+                android:textSize="15sp"
+                android:textColor="@color/textcolor1"
+                android:text="全部频道"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/nav_icon_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+        <View
+            android:visibility="gone"
+            android:id="@+id/view"
+            android:background="#1000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</LinearLayout>

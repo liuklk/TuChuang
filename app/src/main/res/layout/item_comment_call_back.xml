@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="50dp">
+    <RelativeLayout
+        android:id="@+id/comment_view"
+        android:background="@color/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.twentyfourhours.tuchuang.widget.BackEditText
+            android:id="@+id/edt_comments"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/text12"
+            android:textColor="@color/text_bg_3"
+            android:hint="惜字如金，也要评论感激"
+            android:background="@drawable/comment_ed_bg"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_width="280dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:id="@+id/btn_send"
+            android:textColor="@color/text_bg_2"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_size_16"
+            android:text="发送"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

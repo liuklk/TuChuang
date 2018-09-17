@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="120dp">
+<ImageView
+    android:id="@+id/img"
+    android:scaleType="centerCrop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/time"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:gravity="center_vertical|right"
+        android:drawableLeft="@drawable/icon_video1"
+        android:textColor="@color/withe"
+        android:textSize="@dimen/text12"
+        android:background="@color/search_bg_store_price"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+</RelativeLayout>

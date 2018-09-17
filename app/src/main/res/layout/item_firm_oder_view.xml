@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/rl_view"
+        android:background="@color/withe"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:id="@+id/shop_iv"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/state_tv"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/shop_iv"
+            android:textSize="14sp"
+            android:textColor="@color/text_bg_1"
+            android:text="定制T恤 无心设计说明说明"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/delivery_tv"
+            android:textColor="@color/textcolor2"
+            android:textSize="10sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@id/state_tv"
+            android:layout_toRightOf="@id/shop_iv"
+            android:text="黑色 XL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/shop_number"
+            android:textColor="@color/textcolor2"
+            android:textSize="12sp"
+            android:text="x1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="12dp"
+            android:layout_below="@id/delivery_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/new_price"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/text_bg_1"
+            android:textSize="14sp"
+            android:layout_alignBaseline="@id/state_tv"
+            android:layout_alignParentRight="true"
+            android:text="¥99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/delete_price"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/textcolor2"
+            android:textSize="10sp"
+            android:layout_alignBaseline="@id/delivery_tv"
+            android:layout_alignParentRight="true"
+            android:text="¥249"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

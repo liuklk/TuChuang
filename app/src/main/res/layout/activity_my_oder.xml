@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:background="@color/withe"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/withe">
+
+        <ImageView
+            android:id="@+id/gold_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:padding="8dp"
+            android:src="@drawable/icon_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的订单"
+            android:textColor="@color/textcolor1"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+    <View
+        android:background="@color/stockcolor"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorHeight="1dp"
+        app:tabIndicatorColor="@color/black_bg"
+        app:tabTextAppearance="@style/TabLayoutTextStyle2"
+        app:tabSelectedTextColor="@color/black_bg"
+        app:tabTextColor="@color/text_bg_3" />
+    <View
+        android:background="@color/stockcolor"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:wave="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:background="#282828">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/toxiang_bg">
+
+                    <ImageView
+                        android:id="@+id/image_head"
+                        android:layout_width="71dp"
+                        android:layout_height="71dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/img_head"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="6dp"
+                        android:src="@drawable/img_stars"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="登录/注册"
+                    android:textColor="@color/withe"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="310dp"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/my_design"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/icon_design"
+                    android:gravity="center"
+                    android:paddingLeft="34dp"
+                    android:paddingRight="23dp"
+                    android:text="我的设计"
+                    android:textColor="#8fffffff"
+                    android:textSize="14sp"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#8fffffff"/>
+
+                <TextView
+                    android:id="@+id/my_draft"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/icon_draft"
+                    android:gravity="center"
+                    android:paddingLeft="34dp"
+                    android:paddingRight="23dp"
+                    android:text="我的草稿"
+                    android:textColor="#8fffffff"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/msg_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="38dp"
+                android:src="@drawable/icon_news"/>
+
+            <TextView
+                android:id="@+id/msg_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="31dp"
+                android:background="@drawable/msg_number"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/withe"
+                android:textSize="10sp"/>
+
+            <ImageView
+                android:id="@+id/setting_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="58dp"
+                android:layout_marginTop="38dp"
+                android:src="@drawable/icon_setup"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/withe"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <!--<com.twentyfourhours.tuchuang.widget.WaveViewByBezier-->
+                <!--android:id="@+id/wave_bezier"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="25dp" />-->
+            <com.twentyfourhours.tuchuang.widget.WaveViewByBezier2
+                android:id="@+id/wave_bezier2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/withe"-->
+                <!--android:src="@mipmap/bj"/>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.5dp"-->
+                <!--android:background="#282828"/>-->
+        <!--</RelativeLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/withe"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pending_payment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="13dp"
+                android:drawableTop="@drawable/icon_2"
+                android:gravity="center"
+                android:text="待付款"
+                android:textColor="@color/textcolor1"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/pending_delivery"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="13dp"
+                android:drawableTop="@drawable/icon_3"
+                android:gravity="center"
+                android:text="待发货"
+                android:textColor="@color/textcolor1"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/pending_received"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="13dp"
+                android:drawableTop="@drawable/icon_4"
+                android:gravity="center"
+                android:text="待收货"
+                android:textColor="@color/textcolor1"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/pending_evaluated"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="13dp"
+                android:drawableTop="@drawable/icon_9"
+                android:gravity="center"
+                android:text="待评价"
+                android:textColor="@color/textcolor1"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_11"/>
+
+            <TextView
+                android:id="@+id/all_oder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="13dp"
+                android:drawableTop="@drawable/icon_1"
+                android:gravity="center"
+                android:text="订单管理"
+                android:textColor="@color/textcolor1"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/stockcolor"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/withe"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/collection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="13dp"
+                android:drawableTop="@drawable/icon_5"
+                android:gravity="center"
+                android:text="我的收藏"
+                android:textColor="@color/textcolor1"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/discount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="13dp"
+                android:drawableTop="@drawable/icon_6"
+                android:gravity="center"
+                android:text="我的优惠"
+                android:textColor="@color/textcolor1"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/help"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="13dp"
+                android:drawableTop="@drawable/icon_7"
+                android:gravity="center"
+                android:text="系统帮助"
+                android:textColor="@color/textcolor1"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/customer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="13dp"
+                android:drawableTop="@drawable/icon_8"
+                android:gravity="center"
+                android:text="联系客服"
+                android:textColor="@color/textcolor1"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_11"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="13dp"
+                android:drawableTop="@drawable/icon_10"
+                android:gravity="center"
+                android:text="我的服务"
+                android:textColor="@color/textcolor1"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <com.twentyfourhours.tuchuang.widget.MyListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null">
+
+        </com.twentyfourhours.tuchuang.widget.MyListView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/img2"/>
+
+        <com.twentyfourhours.tuchuang.widget.MyGridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:horizontalSpacing="11dp"
+            android:numColumns="2"
+            android:verticalSpacing="11dp">
+
+        </com.twentyfourhours.tuchuang.widget.MyGridView>
+    </LinearLayout>
+</ScrollView>

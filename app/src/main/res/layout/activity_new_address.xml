@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/black_bg"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black_bg">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:padding="8dp"
+            android:src="@drawable/nav_back"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加新地址"
+            android:textColor="@color/withe"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingLeft="12dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/shouhuoren"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_bg_2"
+            android:textSize="14sp"
+            android:text="收货人"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:background="@color/white"
+            android:textColorHint="@color/text_bg_3"
+            android:hint="请输入"
+            android:id="@+id/name"
+            android:layout_toRightOf="@id/shouhuoren"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_bg_2"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/stockcolor"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingLeft="12dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/dianhua"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_bg_2"
+            android:textSize="14sp"
+            android:text="联系电话"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:background="@color/white"
+            android:textColorHint="@color/text_bg_3"
+            android:hint="请输入"
+            android:id="@+id/phone_number"
+            android:layout_toRightOf="@id/dianhua"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_bg_2"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/stockcolor"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingLeft="12dp"
+        android:id="@+id/select_address"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/diqu"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_bg_2"
+            android:textSize="14sp"
+            android:text="所在地区"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColorHint="@color/text_bg_3"
+            android:id="@+id/address"
+            android:layout_toRightOf="@id/diqu"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_bg_2"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:drawablePadding="5dp"
+            android:text="请选择"
+            android:textColor="@color/text_bg_2"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/icon_more1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/stockcolor"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    </RelativeLayout>
+
+    <EditText
+        android:textSize="14sp"
+        android:textColor="@color/text_bg_1"
+        android:maxLines="2"
+        android:padding="12dp"
+        android:gravity="top"
+        android:textColorHint="@color/text_bg_3"
+        android:hint="详细地址"
+        android:id="@+id/detail"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="93dp" />
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:paddingLeft="12dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_bg_2"
+            android:textSize="14sp"
+            android:text="设为默认地址"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_alignParentRight="true"
+            android:id="@+id/check_box"
+            android:layout_centerVertical="true"
+            android:button="@drawable/cart_check_box_selector"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+    </RelativeLayout>
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/save"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shure_btn_bg"
+        android:textColor="@color/withe"
+        android:text="保存"
+        android:layout_width="350.5dp"
+        android:layout_height="33dp"/>
+</LinearLayout>

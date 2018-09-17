@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/withe"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/withe">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:padding="8dp"
+            android:src="@drawable/icon_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择优惠券"
+            android:textColor="@color/textcolor1"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/stockcolor"/>
+
+    <RelativeLayout
+        android:background="@color/withe"
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+        <EditText
+            android:textColorHint="@color/textcolor3"
+            android:id="@+id/input_code"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:paddingLeft="12dp"
+            android:textColor="@color/textcolor1"
+            android:textSize="@dimen/text14"
+            android:hint="请输入优惠码"
+            android:background="@drawable/edittext_bg"
+            android:layout_width="236dp"
+            android:layout_height="37dp"/>
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:textSize="@dimen/text14"
+            android:id="@+id/exchange"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shure_btn_bg_press"
+            android:textColor="@color/withe"
+            android:text="兑换"
+            android:layout_width="87dp"
+            android:layout_height="37dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/stockcolor"/>
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.twentyfourhours.tuchuang.widget.MyListView
+                android:id="@+id/list_view_use"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:divider="@null">
+
+            </com.twentyfourhours.tuchuang.widget.MyListView>
+            <TextView
+                android:layout_marginBottom="12dp"
+                android:textSize="@dimen/text12"
+                android:textColor="@color/text_bg_1"
+                android:layout_gravity="center_horizontal"
+                android:text="以下此订单不适用"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.twentyfourhours.tuchuang.widget.MyListView
+                android:id="@+id/list_view_no_use"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:divider="@null">
+
+            </com.twentyfourhours.tuchuang.widget.MyListView>
+        </LinearLayout>
+
+    </ScrollView>
+    <View
+        android:background="@color/stockcolor"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+<RelativeLayout
+    android:background="@color/withe"
+    android:layout_width="match_parent"
+    android:layout_height="66dp">
+    <Button
+        android:layout_centerInParent="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/shure_btn"
+        android:layout_width="350.5dp"
+        android:textSize="@dimen/text15"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn"
+        android:text="不使用优惠券"
+        android:textColor="@color/text_bg_1"/>
+</RelativeLayout>
+
+</LinearLayout>

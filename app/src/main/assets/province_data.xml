@@ -1,0 +1,77 @@
+<root>
+  <province name="手机">
+    <city name="苹果">
+      <district name="手机壳" zipcode="246000" />
+      <district name="手机膜" zipcode="246000" />
+      <district name="手机支架" zipcode="246000" />
+      <district name="其他" zipcode="246000" />
+    </city>
+    <city name="华为">
+      <district name="手机壳" zipcode="233000" />
+      <district name="手机膜" zipcode="233000" />
+      <district name="手机支架" zipcode="233000" />
+      <district name="其他" zipcode="233000" />
+    </city>
+    <city name="小米">
+      <district name="手机壳" zipcode="236000" />
+      <district name="手机膜" zipcode="236000" />
+      <district name="手机支架" zipcode="236000" />
+      <district name="其他" zipcode="236000" />
+    </city>
+    <city name="魅族">
+      <district name="手机壳" zipcode="238000" />
+      <district name="手机膜" zipcode="238000" />
+      <district name="手机支架" zipcode="238000" />
+      <district name="其他" zipcode="238000" />
+    </city>
+    <city name="努比亚">
+      <district name="手机壳" zipcode="247100" />
+      <district name="手机膜" zipcode="247100" />
+      <district name="手机支架" zipcode="247100" />
+      <district name="其他" zipcode="247100" />
+    </city>
+    <city name="三星">
+      <district name="手机壳" zipcode="247100" />
+      <district name="手机膜" zipcode="247100" />
+      <district name="手机支架" zipcode="247100" />
+      <district name="其他" zipcode="247100" />
+    </city>
+    <city name="vivo">
+      <district name="手机壳" zipcode="247100" />
+      <district name="手机膜" zipcode="247100" />
+      <district name="手机支架" zipcode="247100" />
+      <district name="其他" zipcode="247100" />
+    </city>
+  </province>
+  <province name="衣服">
+    <city name="男装">
+      <district name="外套" zipcode="100000" />
+      <district name="内衣" zipcode="100000" />
+      <district name="内裤" zipcode="100000" />
+      <district name="长裤" zipcode="100000" />
+      <district name="其他" zipcode="100000" />
+    </city>
+    <city name="女装">
+      <district name="外套" zipcode="100000" />
+      <district name="内衣" zipcode="100000" />
+      <district name="内裤" zipcode="100000" />
+      <district name="长裤" zipcode="100000" />
+      <district name="其他" zipcode="100000" />
+    </city>
+  </province>
+  <province name="鞋子">
+    <city name="男鞋">
+      <district name="凉鞋" zipcode="350000" />
+      <district name="球鞋" zipcode="350000" />
+      <district name="皮鞋" zipcode="350000" />
+      <district name="其他" zipcode="350000" />
+    </city>
+    <city name="女鞋">
+      <district name="凉鞋" zipcode="350000" />
+      <district name="球鞋" zipcode="350000" />
+      <district name="皮鞋" zipcode="350000" />
+      <district name="高跟鞋" zipcode="350000" />
+      <district name="其他" zipcode="364000" />
+    </city>
+  </province>
+</root>

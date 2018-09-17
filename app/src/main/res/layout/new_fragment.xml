@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/withe">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/list_ll"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:id="@+id/zonghe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/all"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="综合"
+                    android:textColor="@drawable/list_color_selector"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/xiaoliang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="销量"
+                    android:textColor="@drawable/list_color_selector"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/sale_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/sale"
+                    android:src="@drawable/sale_up_selector"/>
+
+                <ImageView
+                    android:id="@+id/sale_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_toRightOf="@id/sale"
+                    android:src="@drawable/list_down_selector"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/jiage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="价格"
+                    android:textColor="@drawable/list_color_selector"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/sort_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/price"
+                    android:src="@drawable/sale_up_selector"/>
+
+                <ImageView
+                    android:id="@+id/sort_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_toRightOf="@id/price"
+                    android:src="@drawable/list_down_selector"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner_img1"/>
+
+        <com.twentyfourhours.tuchuang.widget.MyGridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="5dp"
+            android:horizontalSpacing="11dp"
+            android:numColumns="2"
+            android:verticalSpacing="11dp">
+
+
+        </com.twentyfourhours.tuchuang.widget.MyGridView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_margin="5dp"
+              android:gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/image_view"
+    android:padding="5dp"
+    android:src="@drawable/ic_icon_item_gallaly"
+    android:background="@drawable/item_gallary_selector"
+    android:layout_width="40dp"
+    android:layout_height="40dp"/>
+    <LinearLayout
+        android:id="@+id/ll_text_view"
+        android:background="@color/black_bg"
+        android:orientation="horizontal"
+        android:layout_width="30dp"
+        android:layout_height="7dp">
+        <TextView
+            android:id="@+id/price"
+            android:gravity="center"
+            android:textColor="@color/withe"
+            android:textSize="5sp"
+            android:text="¥49"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_gravity="center"
+            android:background="@color/withe"
+            android:layout_width="0.5dp"
+            android:layout_height="5dp"/>
+        <TextView
+            android:id="@+id/introduce"
+            android:gravity="center"
+            android:textColor="@color/withe"
+            android:textSize="5sp"
+            android:text="介绍"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

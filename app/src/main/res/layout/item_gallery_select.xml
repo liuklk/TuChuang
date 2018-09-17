@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/gallery_bj"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_free"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="免费  「系统默认图标」"
+        android:textColor="@color/black_bg"
+        android:textSize="10dp"/>
+
+    <View
+        android:layout_width="102dp"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center"
+        android:background="@color/stockcolor"/>
+
+    <TextView
+        android:id="@+id/tv_pay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="付费  「名家大师作品」"
+        android:textColor="@color/black_bg"
+        android:textSize="10dp"/>
+</LinearLayout>

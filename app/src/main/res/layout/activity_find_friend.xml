@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/bg"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/withe"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/withe">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:padding="8dp"
+            android:src="@drawable/icon_return"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发现好友"
+            android:textColor="@color/textcolor1"
+            android:textSize="16sp"/>
+<View
+    android:layout_alignParentBottom="true"
+    android:background="@color/stockcolor"
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"/>
+    </RelativeLayout>
+    <ListView
+        android:scrollbars="none"
+        android:id="@+id/list_view"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>

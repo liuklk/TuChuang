@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f5f5f5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <View
+    android:background="@color/stockcolor"
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radio_find"
+                android:padding="8dp"
+                android:checked="true"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:text="首页"
+                android:textColor="@color/textcolor1"
+                android:textSize="12sp"
+                android:button="@null"
+                android:gravity="center"
+                android:drawableTop="@drawable/find_selector"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/radio_store"
+                android:padding="8dp"
+                android:drawablePadding="5dp"
+                android:layout_weight="1"
+                android:text="精挑"
+                android:textColor="@color/textcolor1"
+                android:textSize="12sp"
+                android:button="@null"
+                android:gravity="center"
+                android:drawableTop="@drawable/store_selector"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/radio_customized"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:text="定制"
+                android:textColor="@color/textcolor1"
+                android:textSize="12sp"
+                android:button="@null"
+                android:gravity="center"
+                android:drawableTop="@drawable/customized_selector"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:id="@+id/radio_community"
+                android:padding="8dp"
+                android:drawablePadding="5dp"
+                android:layout_weight="1"
+                android:text="社区"
+                android:textColor="@color/textcolor1"
+                android:textSize="12sp"
+                android:button="@null"
+                android:gravity="center"
+                android:drawableTop="@drawable/community_selector"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/radio_my"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:text="我的"
+                android:textColor="@color/textcolor1"
+                android:textSize="12sp"
+                android:button="@null"
+                android:gravity="center"
+                android:drawableTop="@drawable/my_selector"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/msg_number"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/msg_number"
+            android:textSize="10sp"
+            android:textColor="@color/withe"
+            android:text="2"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>

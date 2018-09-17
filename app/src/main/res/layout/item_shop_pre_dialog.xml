@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="290dp"
+              android:layout_height="209dp"
+              android:gravity="center_horizontal"
+              android:background="@drawable/dialog_bg"
+              android:orientation="vertical"
+              android:padding="25dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/img_complete"
+            android:gravity="center"
+            android:text="保存成功"
+            android:textColor="@color/black_bg"
+            android:textSize="16sp"/>
+
+<LinearLayout
+    android:layout_marginTop="20dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/modify_btn"
+        android:layout_width="99dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dialog_btn_nv"
+        android:text="返回修改"
+        android:textColor="@color/black_bg"
+        android:textSize="14sp"/>
+
+    <Button
+        android:layout_marginLeft="30dp"
+        android:id="@+id/buy_btn"
+        android:layout_width="99dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/dialog_btn_pv"
+        android:text="立即购买"
+        android:textColor="@color/withe"
+        android:textSize="14sp"/>
+</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+{
+    "data": [
+        {
+            "region_points": [
+                {
+                    "pointX": "15",
+                    "pointY": "15"
+                },
+                {
+                    "pointX": "705",
+                    "pointY": "15"
+                },
+                {
+                    "pointX": "705",
+                    "pointY": "1015"
+                },
+                {
+                    "pointX": "15",
+                    "pointY": "1015"
+                },
+                {
+                    "pointX": "15",
+                    "pointY": "15"
+                },
+                {
+                    "pointX": "360",
+                    "pointY": "512.5"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:id="@+id/community_ll_view"
+              android:background="@color/bg"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <com.twentyfourhours.tuchuang.widget.ObservableScrollview
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/head_view"
+                    android:background="@color/withe"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp">
+                    <View
+                        android:background="@color/blue_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"/>
+                    <LinearLayout
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:background="@drawable/toxiang_bg2">
+
+                            <ImageView
+                                android:id="@+id/image_head"
+                                android:layout_width="71dp"
+                                android:layout_height="71dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/img_head"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Mini蜜桃兔"
+                            android:textColor="@color/text_bg_1"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="沉迷于一切美好的事物"
+                            android:textColor="@color/text_bg_2"
+                            android:textSize="@dimen/text_size_12"/>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:text="关注"
+                                    android:textColor="@color/text_bg_1"
+                                    android:textSize="@dimen/text_size_12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+                                    android:layout_marginLeft="5dp"
+                                    android:text="24"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/clone_bg"
+                                    android:textSize="@dimen/text_size_12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+                            <View
+                                android:background="@color/stockcolor"
+                                android:layout_gravity="center"
+                                android:layout_width="0.5dp"
+                                android:layout_height="10dp"/>
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:text="粉丝"
+                                    android:textColor="@color/text_bg_1"
+                                    android:textSize="@dimen/text_size_12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+                                    android:layout_marginLeft="5dp"
+                                    android:text="1605"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/clone_bg"
+                                    android:textSize="@dimen/text_size_12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+                            <View
+                                android:background="@color/stockcolor"
+                                android:layout_gravity="center"
+                                android:layout_width="0.5dp"
+                                android:layout_height="10dp"/>
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:text="被赞"
+                                    android:textColor="@color/text_bg_1"
+                                    android:textSize="@dimen/text_size_12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+                                    android:layout_marginLeft="5dp"
+                                    android:text="5237"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/clone_bg"
+                                    android:textSize="@dimen/text_size_12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/withe"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+                    <TextView
+                        android:id="@+id/follow"
+                        android:layout_width="68dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/icon_follow_bg"
+                        android:drawableLeft="@drawable/icon_follow"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="关注"
+                        android:textColor="@color/withe"
+                        android:textSize="@dimen/text12"/>
+                </RelativeLayout>
+
+
+                <com.twentyfourhours.tuchuang.widget.MyRecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/my_recycler_view"
+                    android:layout_height="wrap_content">
+
+                </com.twentyfourhours.tuchuang.widget.MyRecyclerView>
+
+            </LinearLayout>
+
+        </com.twentyfourhours.tuchuang.widget.ObservableScrollview>
+        <RelativeLayout
+            android:background="@color/blue_bg"
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="77dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="77dp">
+                <View
+                    android:id="@+id/top_blank_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/title_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Mini蜜桃兔"
+                        android:textColor="@color/withe"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_marginRight="50dp"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/follow_iv"
+                        android:layout_width="60dp"
+                        android:layout_height="28dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/icon_follow_bg"
+                        android:drawableLeft="@drawable/icon_follow"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="关注"
+                        android:textColor="@color/withe"
+                        android:textSize="@dimen/text12"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:padding="7dp"
+            android:src="@drawable/icon_back_community"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="37dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/share"
+            android:padding="7dp"
+            android:src="@drawable/icon_share_community"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="37dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+
+</LinearLayout>

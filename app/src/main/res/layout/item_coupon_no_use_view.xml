@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:background="@drawable/shure_btn_bg_press">
+
+                <LinearLayout
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/jiage"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="30"
+                            android:textColor="@color/withe"
+                            android:textSize="28sp"/>
+                        <TextView
+                            android:layout_marginLeft="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元"
+                            android:textColor="@color/withe"
+                            android:textSize="17sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginLeft="31dp"
+                    android:layout_toRightOf="@id/jiage"
+                    android:textColor="@color/withe"
+                    android:textSize="12sp"
+                    android:text="满160减30元券"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_below="@id/type"
+                    android:layout_marginLeft="31dp"
+                    android:layout_toRightOf="@id/jiage"
+                    android:textColor="@color/withe"
+                    android:layout_marginTop="1dp"
+                    android:textSize="10sp"
+                    android:text="2018.01.11-2018.01.30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginTop="82dp"
+                    android:background="@drawable/img_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <View
+                    android:background="@color/edit_side_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+                <LinearLayout
+                    android:id="@+id/expend"
+                    android:padding="15dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/gray_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="2dp"/>
+                        <TextView
+                            android:id="@+id/detail"
+                            android:textColor="@color/text_bg_1"
+                            android:textSize="11sp"
+                            android:text="全场通用;年货节活动;全场通用;全场通用;年货节活动;全场通用;年货节活动;全场通用;年货节活动;全场通用;年货节活动;全场通用;年货节活动;"
+                            android:layout_width="260dp"
+                            android:layout_height="13dp"/>
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="2dp"/>
+                        <ImageView
+                            android:id="@+id/expend_iv"
+                            android:src="@drawable/icon_down_coupon"
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"/>
+                </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="42dp"/>
+</LinearLayout>

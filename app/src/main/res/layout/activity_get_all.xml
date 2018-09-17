@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/getImage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Image" />
+
+    <Button
+        android:id="@+id/getVideo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Video" />
+
+    <Button
+        android:id="@+id/getAudio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Audio" />
+
+    <Button
+        android:id="@+id/getFiles"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Files" />
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/myTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

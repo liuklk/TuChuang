@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <ListView
+                android:divider="@null"
+                android:background="@color/bg"
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+    </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="85dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textColor="@color/text_bg_2"
+            android:text="暂无消息"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

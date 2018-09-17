@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/withe"
+              android:orientation="vertical">
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="140dp"
+            android:layout_height="175dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_like1"/>
+
+            <TextView
+                android:id="@+id/mark_tv"
+                android:layout_width="15dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/text_rc_bg"
+                android:gravity="center"
+                android:text="4色可选"
+                android:textColor="@color/textcolor_rc"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/mark_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/nuan_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="吸水吸油,热销200万卷"
+                android:textColor="@color/text_color_bg"
+                android:textSize="10sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mark_tv3"
+                android:layout_width="48dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7.5dp"
+                android:background="@color/black_bg"
+                android:gravity="center"
+                android:text="满件减"
+                android:textColor="@color/withe"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/limit_time"
+                android:layout_width="48dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7.5dp"
+                android:background="@color/black_bg"
+                android:gravity="center"
+                android:text="限时购"
+                android:textColor="@color/withe"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7.5dp"
+            android:text="懒人抹布"
+            android:textColor="@color/textcolor1"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7.5dp"
+            android:text="¥13.99"
+            android:textColor="@color/clone_bg"
+            android:textSize="13sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/black_bg"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/good"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/icon_like_selector"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="赞"
+            android:textColor="@color/withe"
+            android:textSize="@dimen/text12"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@color/stockcolor"/>
+
+        <TextView
+            android:id="@+id/comment_total"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/icom_comment"
+            android:gravity="center"
+            android:paddingLeft="26dp"
+            android:paddingRight="26dp"
+            android:text="评论·2"
+            android:textColor="@color/withe"
+            android:textSize="@dimen/text12"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@color/stockcolor"/>
+
+        <RelativeLayout
+            android:id="@+id/match_good"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/icom_comment"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="匹配商品"
+                android:textColor="@color/withe"
+                android:textSize="@dimen/text12"/>
+
+            <TextView
+                android:id="@+id/cart_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/cart_number"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/withe"
+                android:textSize="10sp"/>
+            <ImageView
+                android:layout_marginTop="-18dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

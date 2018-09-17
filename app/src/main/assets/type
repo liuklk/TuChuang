@@ -1,0 +1,30 @@
+{
+    "data": [
+        {
+            "type": "1",
+            "fileNames": [
+                {
+                    "fileName": "p1_1"
+                }
+            ]
+        },
+        {
+            "type": "2",
+            "fileNames": [
+                {
+                    "fileName": "p2_1"
+                },
+                {
+                    "fileName": "p2_2"
+                },
+                {
+                    "fileName": "p2_3"
+                }
+                ,
+                {
+                    "fileName": "p2_4"
+                }
+            ]
+        }
+    ]
+}

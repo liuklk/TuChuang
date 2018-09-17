@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+<View
+    android:layout_width="match_parent"
+    android:layout_height="20dp"/>
+        <TextView
+
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="@color/withe"
+            android:textSize="@dimen/text_size_12"
+            android:text="2018年01月15日 13:47"
+            android:background="@drawable/shure_btn_bg"
+            android:layout_width="149dp"
+            android:layout_height="20dp"/>
+        <RelativeLayout
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/msg_bg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+                <TextView
+                    android:textColor="@color/textcolor1"
+                    android:text="通知"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="亲爱的好友,恭喜您已注册成功,获得30元新人优惠券,快去定制喜欢的东西吧....."
+                    android:textColor="@color/text_bg_3"
+                    android:textSize="@dimen/text_size_12"
+                    android:layout_alignParentBottom="true"
+                    android:maxLines="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"/>
+        </RelativeLayout>
+</LinearLayout>

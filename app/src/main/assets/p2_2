@@ -1,0 +1,60 @@
+{
+    "data": [
+        {
+            "region_points": [
+                {
+                    "pointX": "15",
+                    "pointY": "15"
+                },
+                {
+                    "pointX": "352.5",
+                    "pointY": "15"
+                },
+                {
+                    "pointX": "352.5",
+                    "pointY": "1015"
+                },
+                {
+                    "pointX": "15",
+                    "pointY": "1015"
+                },
+                {
+                    "pointX": "15",
+                    "pointY": "15"
+                },
+                {
+                    "pointX": "180",
+                    "pointY": "512.5"
+                }
+            ]
+        },
+        {
+            "region_points": [
+                {
+                    "pointX": "367.5",
+                    "pointY": "15"
+                },
+                {
+                    "pointX": "705",
+                    "pointY": "15"
+                },
+                {
+                    "pointX": "705",
+                    "pointY": "1015"
+                },
+                {
+                    "pointX": "367.5",
+                    "pointY": "1015"
+                },
+                {
+                   "pointX": "367.5",
+                    "pointY": "15"
+                },
+                {
+                    "pointX": "540",
+                    "pointY": "512.5"
+                }
+            ]
+        }
+    ]
+}
